@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body style = "background-color : pink">
+            
+<label name = "principal" id = "principals">Principal</label>
+<input type = "text" id = "principal"required>
+<label name = "rate" id = "rates">Rate</label>
+<input type = "text" id = "rate"required><br><br>
+<label name = "time" id = "times">Time</label>
+<input type = "text" id = "time"><br><br>
+ <button onclick="si()">Calculate</button>
+<p id="result"></p>;
+            <script>
+                function si(){
+ p = document.getElementById("principal").value;
+r = document.getElementById("rate").value;
+t=document.getElementById("time").value;
+  result = document.getElementById("result");
+  result.innerHTML = "The interest is " + (p*r*t/100);
+}
+            </script>
+        </body>
+    </head>
+</html>
